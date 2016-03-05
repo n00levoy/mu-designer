@@ -1,4 +1,4 @@
-#include "designer.h"
+﻿#include "designer.h"
 #include "ui_designer.h"
 #include "textedit.h"
 
@@ -31,7 +31,7 @@ designer::designer(QWidget *parent) : QMainWindow(parent), ui(new Ui::designer)
     dAlbumSettings alSets(&tmplt);
     //alSets.setDownloadAlbumFormat(0, "MP3");
     //alSets.setDownloadAlbumLink(0, "https://yadi.sk/d/nY3DXClTpEB5M");
-    //alSets.setDownloadAlbumFormat(1, "FLAC");
+    alSets.setDownloadAlbumFormat(1, "FLAC");
     //alSets.setDownloadAlbumLink(1, "https://cloud.mail.ru/public/EJFJ/u2pqQLexo");
 }
 
