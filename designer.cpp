@@ -29,10 +29,10 @@ designer::designer(QWidget *parent) : QMainWindow(parent), ui(new Ui::designer)
 
     dTemplate tmplt;
     dAlbumSettings alSets(&tmplt);
-    alSets.setDownloadAlbumFormat(0, "MP3");
-    alSets.setDownloadAlbumLink(0, "https://yadi.sk/d/nY3DXClTpEB5M");
-    alSets.setDownloadAlbumFormat(1, "FLAC");
-    alSets.setDownloadAlbumLink(1, "https://cloud.mail.ru/public/EJFJ/u2pqQLexo");
+    //alSets.setDownloadAlbumFormat(0, "MP3");
+    //alSets.setDownloadAlbumLink(0, "https://yadi.sk/d/nY3DXClTpEB5M");
+    //alSets.setDownloadAlbumFormat(1, "FLAC");
+    //alSets.setDownloadAlbumLink(1, "https://cloud.mail.ru/public/EJFJ/u2pqQLexo");
 }
 
 designer::~designer()
