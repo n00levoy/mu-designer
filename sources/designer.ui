@@ -470,8 +470,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>599</width>
-                 <height>145</height>
+                 <width>217</width>
+                 <height>108</height>
                 </rect>
                </property>
                <layout class="QGridLayout" name="dl_linksLayout">
@@ -1134,12 +1134,12 @@
   <customwidget>
    <class>TextEdit</class>
    <extends>QPlainTextEdit</extends>
-   <header>sources/textedit.h</header>
+   <header>textedit.h</header>
   </customwidget>
   <customwidget>
    <class>coloredButton</class>
    <extends>QPushButton</extends>
-   <header location="global">sources/coloredbutton.h</header>
+   <header>coloredbutton.h</header>
   </customwidget>
  </customwidgets>
  <tabstops>
