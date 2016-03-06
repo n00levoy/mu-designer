@@ -1,7 +1,7 @@
 #ifndef DALBUMSETTINGS_H
 #define DALBUMSETTINGS_H
 
-#include "dsettings.h"
+#include "settings.h"
 
 struct mainAlbumSets
 {

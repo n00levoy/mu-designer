@@ -5,8 +5,8 @@
 #include <QtNetwork>
 #include <QJsonDocument>
 #include "coloredbutton.h"
-#include "dtemplate.h"
-#include "dalbumsettings.h"
+#include "template.h"
+#include "albumsettings.h"
 
 namespace Ui {
 class designer;

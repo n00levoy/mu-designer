@@ -2,7 +2,7 @@
 #define DSETTINGS_H
 
 #include <QObject>
-#include "dtemplate.h"
+#include "template.h"
 
 class dSettings : public QObject
 {

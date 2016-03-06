@@ -1,4 +1,4 @@
-#include "dtemplate.h"
+#include "template.h"
 
 dTemplate::dTemplate()
 {

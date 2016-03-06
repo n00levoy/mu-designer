@@ -1,7 +1,7 @@
 #ifndef DDECORATIONSETTINGS_H
 #define DDECORATIONSETTINGS_H
 
-#include "dsettings.h"
+#include "settings.h"
 
 struct colorDecorSets
 {

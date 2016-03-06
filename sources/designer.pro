@@ -22,18 +22,18 @@ SOURCES += main.cpp \
            designer_lastfm.cpp \
            designer_templates.cpp \
            designer_icons.cpp \
-           dtemplate.cpp \
-           dsettings.cpp \
-           dalbumsettings.cpp \
-           ddecorationsettings.cpp
+           template.cpp \
+           settings.cpp \
+           albumsettings.cpp \
+           decorationsettings.cpp
 
 HEADERS  += designer.h \
             textedit.h \
             coloredbutton.h \
-            dtemplate.h \
-            dsettings.h \
-            dalbumsettings.h \
-            ddecorationsettings.h
+            template.h \
+            settings.h \
+            albumsettings.h \
+            decorationsettings.h
 
 FORMS += \
     designer.ui

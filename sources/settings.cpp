@@ -1,4 +1,4 @@
-#include "dsettings.h"
+#include "settings.h"
 
 dSettings::dSettings(dTemplate* tmp)
 {

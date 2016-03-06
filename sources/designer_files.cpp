@@ -1,8 +1,8 @@
 #include "designer.h"
 #include "ui_designer.h"
 
-#include <3rdparty/taglib/include/fileref.h>
-#include <3rdparty/taglib/include/tag.h>
+#include "fileref.h"
+#include "tag.h"
 
 void designer::getFilesFromList()
 {

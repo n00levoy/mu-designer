@@ -1,4 +1,4 @@
-#include "dalbumsettings.h"
+#include "albumsettings.h"
 
 dAlbumSettings::dAlbumSettings(dTemplate* tmplt) : dSettings(tmplt)
 {
