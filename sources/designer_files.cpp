@@ -5,9 +5,9 @@
 #include "tag.h"
 
 #if defined(Q_OS_WIN)
-    #define filestr wchar_t
+    typedef const wchar_t filestr;
 #elif defined(Q_OS_UNIX)
-    #define filestr char
+    typedef const char filestr;
 #endif
 
 void designer::getFilesFromList()
@@ -40,7 +40,7 @@ void designer::getFiles(QStringList files)
     int duration = 0;
     foreach(QString filepath, files)
     {
-        TagLib::FileRef f(reinterpret_cast<const filestr*>(filepath.constData()));
+        TagLib::FileRef f(reinterpret_cast<filestr*>(filepath.constData()));
         TagLib::AudioProperties* props = f.audioProperties();
         duration += props->lengthInSeconds();
 
@@ -53,7 +53,7 @@ void designer::getFiles(QStringList files)
     ui->tracklistText->setPlainText(filenames);
 
     QString tagfile = files.first();
-    TagLib::FileRef f(reinterpret_cast<const filestr*>(tagfile.constData()));
+    TagLib::FileRef f(reinterpret_cast<filestr*>(tagfile.constData()));
     QString artist = f.tag()->artist().toCString(true);
     QString album  = f.tag()->album() .toCString(true);
     uint    year   = f.tag()->year();
