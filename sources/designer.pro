@@ -42,11 +42,11 @@ INCLUDEPATH += $$PWD/../3rdparty/taglib/include/
 
 win32
 {
-    LIBS += $$PWD/../3rdparty/taglib/lib/libtag.dll.a
+    LIBS += -L$$PWD/../3rdparty/taglib/lib/libtag.dll.a
 }
 
 unix
 {
-    LIBS += -L/usr/local/lib/libtag.a
-    LIBS += -L/usr/local/lib/libz.a
+    LIBS += /usr/local/lib/libtag.a
+    LIBS += /usr/local/lib/libz.a
 }

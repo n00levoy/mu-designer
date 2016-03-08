@@ -4,6 +4,12 @@
 #include "fileref.h"
 #include "tag.h"
 
+#if defined(Q_OS_WIN)
+    #define filestr wchar_t
+#elif defined(Q_OS_UNIX)
+    #define filestr char
+#endif
+
 void designer::getFilesFromList()
 {
     QStringList files = QFileDialog::getOpenFileNames(0, "Выбрать файлы", "", "*.mp3 *.flac *.m4a");
@@ -34,7 +40,7 @@ void designer::getFiles(QStringList files)
     int duration = 0;
     foreach(QString filepath, files)
     {
-        TagLib::FileRef f(reinterpret_cast<const wchar_t*>(filepath.constData()));
+        TagLib::FileRef f(reinterpret_cast<const filestr*>(filepath.constData()));
         TagLib::AudioProperties* props = f.audioProperties();
         duration += props->lengthInSeconds();
 
@@ -47,7 +53,7 @@ void designer::getFiles(QStringList files)
     ui->tracklistText->setPlainText(filenames);
 
     QString tagfile = files.first();
-    TagLib::FileRef f(reinterpret_cast<const wchar_t*>(tagfile.constData()));
+    TagLib::FileRef f(reinterpret_cast<const filestr*>(tagfile.constData()));
     QString artist = f.tag()->artist().toCString(true);
     QString album  = f.tag()->album() .toCString(true);
     uint    year   = f.tag()->year();
